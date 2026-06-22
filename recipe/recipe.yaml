@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}.*
+    - python 3.11.*
     - pip
     - setuptools
     - setuptools-scm
@@ -31,7 +31,7 @@ requirements:
     - jinja2
     - netCDF4
     - numpy
-    - python >=${{ python_min }}
+    - python >=3.11
     - requests
     - typer
     - xarray
@@ -49,7 +49,7 @@ tests:
         - fcollections.implementations
         - fcollections.sad
       python_version:
-        - ${{ python_min }}.*
+        - 3.11.*
   # --- Import tests with optional packages installed
   - script:
       - python -c "import fcollections.geometry; import fcollections.implementations"
