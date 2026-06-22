@@ -1,7 +1,8 @@
 schema_version: 1
 
 context:
-  version: "1.0.0"
+  version: "2.0.0"
+  python_min: "3.11"
 
 package:
   name: files_collections
@@ -9,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/files-collections/files_collections-${{ version }}.tar.gz
-  sha256: 7b3c7dff2bd84ad94d6d83eb064a59d42369d0797e07305d3579322dc346f3c7
+  sha256: 79fcf9358f7fbfe8a5ad4b4c6babc6ee83a63804e37de859da3984308e2bff8f
 
 build:
   noarch: python
